@@ -102,3 +102,36 @@ body {
   background-color: #94c7a8;
   color: #2f6b45;
 }
+
+@media (max-width: 767.98px) {
+  footer {
+    padding-top: 0.5rem !important;   
+    padding-bottom: 6rem !important;
+  }
+
+  footer .container-fluid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.3rem !important;          
+  }
+
+  footer p {
+    margin-bottom: 2px !important;   
+  }
+}
+
+.custom-footer {
+  padding-top: 15px !important;
+  padding-bottom: 90px !important; 
+}
+
+@media (max-width: 767.98px) {
+  .custom-footer .container-fluid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
