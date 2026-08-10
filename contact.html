@@ -9,6 +9,8 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="my-style.css">
+    <link rel="stylesheet" href="style2.css">
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-md-3">
           <li class="nav-item px-lg-2">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item px-lg-2">
             <a class="nav-link" href="about.html">About Us</a>
@@ -48,15 +50,15 @@
       <div class="row g-5 align-items-start">
 
 
-        <div class="col-12 col-md-5">
-          <h1 class="fw-bold mb-4" style="color: #d64550;">Let’s Get In Touch</h1>
+        <div class="col-12 col-md-5 js-contact-info">
+          <h1 class="fw-bold mb-4 js-contact-heading" style="color: #d64550;">Let's Get In Touch</h1>
 
-          <p class="text-secondary small mb-3" style="line-height: 1.6;">
+          <p class="text-secondary small mb-3 js-contact-text" style="line-height: 1.6;">
             Lorem ipsum dolor sit amet consectetur. Faucibus nulla dui ut nulla nec viverra enim luctus ut. Venenatis
             urna leo facilisi facilisi iaculis pellentesque at purus.
           </p>
 
-          <p class="text-secondary small" style="line-height: 1.6;">
+          <p class="text-secondary small js-contact-text" style="line-height: 1.6;">
             Neque erat sit sed venenatis platea volutpat justo tristique. Sagittis sagittis magna tellus magna ridiculus
             parturient. Egestas tempor lobortis vitae amet facilisi diam nec metus imperdiet. At proin et enim
             fermentum. Erat blandit nibh cras consequat cras mauris. In eu turpis sed dolor sit dapibus magnis arcu
@@ -68,25 +70,25 @@
         <div class="col-12 col-md-7">
           <form>
 
-            <div class="mb-3">
+            <div class="mb-3 js-form-field">
               <input type="text" class="form-control rounded-pill px-4 py-2 border-secondary-subtle"
                 placeholder="Your Name">
             </div>
 
 
-            <div class="mb-3">
+            <div class="mb-3 js-form-field">
               <input type="email" class="form-control rounded-pill px-4 py-2 border-secondary-subtle"
                 placeholder="Your Email">
             </div>
 
 
-            <div class="mb-4">
+            <div class="mb-4 js-form-field">
               <textarea class="form-control rounded-4 p-4 border-secondary-subtle" rows="6"
                 placeholder="Your Message"></textarea>
             </div>
 
 
-            <div>
+            <div class="js-form-field">
               <button type="submit" class="btn text-white rounded-pill px-5 py-2 fw-semibold"
                 style="background-color: #92d0a4;">Submit</button>
             </div>
@@ -98,56 +100,38 @@
   </div>
 
 
-  <!-- <footer class="bg-white py-4 px-4 px-md-5 border-top">
-    <div class="container-fluid d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3">
-
-      <div>
-        <h5 class="fw-bold text-dark mb-2">Visit Us</h5>
-        <p class="mb-1 text-secondary small">
-          <i class="bi bi-geo-alt me-1"></i>9998 Hayes Isle, Mantefurt 03581
+  <div class="container-fluid bg-light footer">
+    <div
+      class="container my-4 my-md-5 py-4 py-md-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 js-reveal">
+      <div class="footer-text1 text-center text-md-start">
+        <h3 class="text-uppercase fw-bold mb-3 fs-4 fs-md-3">Visit Us</h3>
+        <p class="mb-2 address footer-address">
+          <span><img src="assets/Maps and Flags.svg" alt="Location Pin"></span>
+          9998 Hayes Isle, Mantefurt 03581
         </p>
-        <p class="mb-0 text-secondary small">
-          <i class="bi bi-telephone me-1"></i>505-418-0415
+        <p class="mb-0 phone footer-phone">
+          <span><img src="assets/Phone.svg" alt="Phone Icon"></span>
+          505-418-0415
         </p>
       </div>
 
-      <footer class="bg-white py-4 border-top">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-
-          <div>
-            <div class="d-flex align-items-center gap-2">
-              <span class="text-secondary small me-1">Follow Us</span>
-              <a href="#" class="text-primary fs-5"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-primary fs-5"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="text-danger fs-5"><i class="bi bi-instagram"></i></a>
-            </div>
-
-          </div>
-      </footer>  -->
-
-<footer class="bg-white custom-footer px-4 px-md-5 border-top">
-  <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
-
-    <!-- Visit Us -->
-    <div>
-      <h5 class="fw-bold text-dark mb-1">Visit Us</h5>
-      <p class="mb-1 text-secondary small">
-        <i class="bi bi-geo-alt me-1"></i>9998 Hayes Isle, Mantefurt 03581
-      </p>
-      <p class="mb-0 text-secondary small">
-        <i class="bi bi-telephone me-1"></i>505-418-0415
-      </p>
+      <div class="social-media d-flex align-items-center justify-content-center">
+        <span class="fw-semibold me-2">Follow Us</span>
+        <div class="social-media-icons d-flex gap-2">
+          <a href="#" class="footer-social-icon"><img src="assets/Instagram.svg" alt="Instagram"></a>
+          <a href="#" class="footer-social-icon"><img src="assets/Facebook.svg" alt="Facebook"></a>
+          <a href="#" class="footer-social-icon"><img src="assets/Linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
     </div>
-
-    <!-- Follow Us -->
-    <div class="d-flex align-items-center justify-content-center gap-2 mt-2 mt-md-0">
-      <span class="text-secondary small me-1">Follow Us</span>
-      <a href="#" class="text-primary fs-5"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="text-primary fs-5"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="text-danger fs-5"><i class="bi bi-instagram"></i></a>
-    </div>
-
   </div>
-</footer>
 
-      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
